@@ -53,6 +53,7 @@ const schema = defineSchema({
   ],
 });
 
+console.log(`ENV INFO: 1:${process.env.NEXT_PUBLIC_TINA_BRANCH} 2:${process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF}`)
 export const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   branch:
